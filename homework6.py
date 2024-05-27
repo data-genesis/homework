@@ -8,10 +8,9 @@ print("Deleted value:", a)
 print("Updated dict:", my_dict)
 
 
-
-list = [3, 6, 7, 3, 'Yes', 6, 3,]
-my_set = set(list)
-list =
-
-print("Set:", set(my_set))
-print(my_set)
+my_set = {3, 6, 7, 3, 'Yes', 6, 3}
+print("Set:", my_set)
+my_set.add(566)
+my_set.add(True)
+my_set.discard(6)
+print("Modified set:", my_set)
