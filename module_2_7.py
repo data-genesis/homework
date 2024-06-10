@@ -1,8 +1,11 @@
-def get_multiplied_digits(number):
-    str_number = str(number)
-    first = int(str_number[0])
-    if len(str_number) <= 1:
-        return first
-    else:
-        return first * get_multiplied_digits(int(str_number[1:]))
-print(get_multiplied_digits(40203))
+def print_params(a = 1, b = 'строка', c = True):
+    print(a, b, c)
+
+Boo = False
+values_list = [Boo, 45, [1, 5, 18]]
+values_dict = {"a": 3, "b": 'Hello', "c": False}
+values_list_2 = [1.234, "two"]
+
+print_params(*values_list_2, 42)
+print_params(**values_dict)
+print_params(*values_list_2, values_dict)
