@@ -28,7 +28,7 @@ fourth = Thread(target=write_words, args=(100, "example8.txt"))
 
 first.start()
 second.start()
-third.start()q
+third.start()
 fourth.start()
 
 time_end2 = datetime.now()
