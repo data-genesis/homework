@@ -12,8 +12,7 @@ def write_words(word_count, file_name):
             sleep(0.1)
     time_end = datetime.now()
     time_res = time_end - time_start
-    print(f"Функция закончила работу за {time_res} секунд.\n"
-          f"Завершилась запись в файл {file_name}")
+    print(f"Завершилась запись в файл {file_name}")
 
 write_words(10, "example1.txt")
 write_words(30, "example2.txt")
@@ -35,6 +34,5 @@ time_end2 = datetime.now()
 time_res2 = time_end2 - time_start2
 
 print(f"Потоки закончили работу за {time_res2} секунд.")
-
 
 
