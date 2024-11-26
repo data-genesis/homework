@@ -52,9 +52,6 @@ async def set_age(call: types.CallbackQuery):
 
 @dp.message_handler(state=UserState.age)
 async def set_growth(message: types.Message, state: FSMContext):
-    if not message.text.isdigit():
-        await message.answer("Пожалуйста, введите корректный возраст (число).")
-        return
     await state.update_data(age=int(message.text))
     await message.answer("Введите свой рост (см):")
     await UserState.growth.set()
